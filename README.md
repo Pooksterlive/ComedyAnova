@@ -1,1 +1,6 @@
 # ComedyAnova
+In this repo, you will find a csv with the data that I use and the jupyter notebook. 
+
+I scraped over 340 stand up comedy transcripts from scrapsfromtheloft.com. I then cleaned the data up, tokenized the data, and got some descriptive stats for the transcripts. The average length of these stand up routines is 2385 words long with a standard error of 872. I then pulled the IMDb rating for the stand up routine from the imdb api. I then clustered the routine using LDA topic modeling. I found 4 or 7 different clusters of data. After looking into the data, I noticed that 3 of the clusters only had 2-3 routines, so I dropped the clusters down to 4 to make things easier.
+Part of the struggle of gathering the data was the actual breaking down the html and finding the data. The website had a terrible HTML layout and it was very hard to pin down where the data was located. Another thing I found difficult was the anova test. I ran two different python packages to run an anova test and got very different results.
+I ran the anova test to see if there was a difference between means of ratings between clusters. This test could easily be done with things like difference in means of swear word counts of clusters as well. 
